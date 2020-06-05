@@ -9,7 +9,6 @@ C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\sampleapp\bin\Debug\net
 C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\sampleapp\bin\Debug\netcoreapp3.1\sampleapp.pdb
 C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\sampleapp\bin\Debug\netcoreapp3.1\sampleapp.Views.dll
 C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\sampleapp\bin\Debug\netcoreapp3.1\sampleapp.Views.pdb
-C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\sampleapp\obj\Debug\netcoreapp3.1\sampleapp.csprojAssemblyReference.cache
 C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\sampleapp\obj\Debug\netcoreapp3.1\sampleapp.AssemblyInfoInputs.cache
 C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\sampleapp\obj\Debug\netcoreapp3.1\sampleapp.AssemblyInfo.cs
 C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\sampleapp\obj\Debug\netcoreapp3.1\sampleapp.csproj.CoreCompileInputs.cache
