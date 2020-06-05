@@ -6,5 +6,4 @@ RUN ["dotnet", "restore"]
 RUN ["dotnet", "build"]
 
 EXPOSE 80/tcp
-EXPOSE 443/tcp
 ENTRYPOINT ["dotnet", "run"]
