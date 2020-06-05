@@ -1,8 +1,5 @@
 core-app:
-  image: mcr.microsoft.com/dotnet/core/samples:aspnetapp
-  container_name: core-app
-  ports:
-    - "8000:80"
+  build: ./sampleapp
 
 nginx:
   build: ./nginx
