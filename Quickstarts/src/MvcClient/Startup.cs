@@ -26,7 +26,7 @@ namespace MvcClient
                 {
                     options.Authority = "https://ubuntu-dev.southcentralus.cloudapp.azure.com/";
                     //options.RequireHttpsMetadata = false;
-                    options.CallbackPath = new PathString("/sample/home/index");
+                    options.CallbackPath = new PathString("/sample/signin-oidc");
                     options.ClientId = "mvc";
                     options.ClientSecret = "secret";
                     options.ResponseType = "code";
