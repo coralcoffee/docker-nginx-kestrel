@@ -53,3 +53,4 @@ C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\src\Api\obj
 C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\src\Api\obj\Debug\netcoreapp3.0\staticwebassets\Api.StaticWebAssets.Manifest.cache
 C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\src\Api\obj\Debug\netcoreapp3.0\staticwebassets\Api.StaticWebAssets.xml
 C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\src\Api\obj\Debug\netcoreapp3.0\Api.genruntimeconfig.cache
+C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\src\Api\obj\Debug\netcoreapp3.0\Api.csprojAssemblyReference.cache
