@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -25,7 +26,7 @@ namespace MvcClient
                 {
                     options.Authority = "https://ubuntu-dev.southcentralus.cloudapp.azure.com/";
                     //options.RequireHttpsMetadata = false;
-
+                    options.CallbackPath = new PathString("/sample/home/index");
                     options.ClientId = "mvc";
                     options.ClientSecret = "secret";
                     options.ResponseType = "code";
