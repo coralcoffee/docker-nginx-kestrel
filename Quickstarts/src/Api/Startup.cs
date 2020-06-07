@@ -16,7 +16,7 @@ namespace Api
             services.AddAuthentication("Bearer")
                 .AddJwtBearer("Bearer", options =>
                 {
-                    options.Authority = "http://ubuntu-dev.southcentralus.cloudapp.azure.com/";
+                    options.Authority = "https://ubuntu-dev.southcentralus.cloudapp.azure.com/";
                     options.RequireHttpsMetadata = false;
 
                     options.Audience = "api1";
@@ -25,14 +25,7 @@ namespace Api
 
         public void Configure(IApplicationBuilder app)
         {
-            var fordwardedHeaderOptions = new ForwardedHeadersOptions
-            {
-                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
-            };
-            fordwardedHeaderOptions.KnownNetworks.Clear();
-            fordwardedHeaderOptions.KnownProxies.Clear();
-
-            app.UseForwardedHeaders(fordwardedHeaderOptions);
+            
             app.UseRouting();
 
             app.UseAuthentication();
