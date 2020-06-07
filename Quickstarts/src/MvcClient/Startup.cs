@@ -24,7 +24,7 @@ namespace MvcClient
                 .AddCookie("Cookies")
                 .AddOpenIdConnect("oidc", options =>
                 {
-                    options.Authority = "https://ubuntu-dev.southcentralus.cloudapp.azure.com/";
+                    options.Authority = "https://ubuntu-dev.southcentralus.cloudapp.azure.com/account/login";
                     //options.RequireHttpsMetadata = false;
                     options.CallbackPath = new PathString("/sample/signin-oidc");
                     options.ClientId = "mvc";
