@@ -48,7 +48,7 @@ namespace IdentityServer
                     RequirePkce = true,
                 
                     // where to redirect to after login
-                    RedirectUris = { "http://localhost/sample/" },
+                    RedirectUris = { "http://localhost/sample/signin-oidc" },
 
                     // where to redirect to after logout
                     PostLogoutRedirectUris = { "http://localhost/sample/signout-callback-oidc" },
