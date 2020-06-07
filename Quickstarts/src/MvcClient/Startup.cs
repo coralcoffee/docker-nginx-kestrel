@@ -23,7 +23,7 @@ namespace MvcClient
                 .AddCookie("Cookies")
                 .AddOpenIdConnect("oidc", options =>
                 {
-                    options.Authority = "http://ubuntu-dev.southcentralus.cloudapp.azure.com/";
+                    options.Authority = "https://ubuntu-dev.southcentralus.cloudapp.azure.com/";
                     options.RequireHttpsMetadata = false;
 
                     options.ClientId = "mvc";
@@ -39,14 +39,6 @@ namespace MvcClient
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            var fordwardedHeaderOptions = new ForwardedHeadersOptions
-            {
-                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
-            };
-            fordwardedHeaderOptions.KnownNetworks.Clear();
-            fordwardedHeaderOptions.KnownProxies.Clear();
-
-            app.UseForwardedHeaders(fordwardedHeaderOptions);
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -58,9 +50,18 @@ namespace MvcClient
 
             app.UseStaticFiles();
 
-            app.UseRouting();
+            app.UseRouting(); 
+            var fordwardedHeaderOptions = new ForwardedHeadersOptions
+            {
+                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+            };
+            fordwardedHeaderOptions.KnownNetworks.Clear();
+            fordwardedHeaderOptions.KnownProxies.Clear();
+
+            app.UseForwardedHeaders(fordwardedHeaderOptions);
             app.UseAuthentication();
             app.UseAuthorization();
+           
 
             app.UseEndpoints(endpoints =>
             {
