@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.IdentityModel.Tokens.Jwt;
@@ -22,7 +23,7 @@ namespace MvcClient
                 .AddCookie("Cookies")
                 .AddOpenIdConnect("oidc", options =>
                 {
-                    options.Authority = "http://sample.smhis2.canadacentral.cloudapp.azure.com/";
+                    options.Authority = "https://sample.smhis2.canadacentral.cloudapp.azure.com/";
                     options.RequireHttpsMetadata = false;
 
                     options.ClientId = "mvc";
@@ -38,6 +39,14 @@ namespace MvcClient
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            var fordwardedHeaderOptions = new ForwardedHeadersOptions
+            {
+                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+            };
+            fordwardedHeaderOptions.KnownNetworks.Clear();
+            fordwardedHeaderOptions.KnownProxies.Clear();
+
+            app.UseForwardedHeaders(fordwardedHeaderOptions);
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
