@@ -23,8 +23,8 @@ namespace MvcClient
                 .AddCookie("Cookies")
                 .AddOpenIdConnect("oidc", options =>
                 {
-                    options.Authority = "https://ubuntu-dev.southcentralus.cloudapp.azure.com/";
-                    options.RequireHttpsMetadata = true;
+                    options.Authority = "http://localhost/";
+                    options.RequireHttpsMetadata = false;
 
                     options.ClientId = "mvc";
                     options.ClientSecret = "secret";
@@ -50,6 +50,8 @@ namespace MvcClient
 
             app.UseStaticFiles();
 
+           
+            app.UseAuthentication(); 
             app.UseRouting(); 
             var fordwardedHeaderOptions = new ForwardedHeadersOptions
             {
@@ -59,7 +61,6 @@ namespace MvcClient
             fordwardedHeaderOptions.KnownProxies.Clear();
 
             app.UseForwardedHeaders(fordwardedHeaderOptions);
-            app.UseAuthentication();
             app.UseAuthorization();
            
 

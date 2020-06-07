@@ -30,7 +30,7 @@ namespace MvcClient.Controllers
 
             var client = new HttpClient();
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
-            var content = await client.GetStringAsync("http://ubuntu-dev.southcentralus.cloudapp.azure.com/api/identity");
+            var content = await client.GetStringAsync("http://localhost/api/identity");
 
             ViewBag.Json = JArray.Parse(content).ToString();
             return View("json");
