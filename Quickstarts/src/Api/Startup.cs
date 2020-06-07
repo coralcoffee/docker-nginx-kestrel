@@ -16,8 +16,8 @@ namespace Api
             services.AddAuthentication("Bearer")
                 .AddJwtBearer("Bearer", options =>
                 {
-                    options.Authority = "http://localhost/";
-                    options.RequireHttpsMetadata = false;
+                    options.Authority = "http://ubuntu-dev.southcentralus.cloudapp.azure.com/";
+                    //options.RequireHttpsMetadata = false;
 
                     options.Audience = "api1";
                 });
@@ -25,31 +25,23 @@ namespace Api
 
         public void Configure(IApplicationBuilder app)
         {
-            app.Map("/api", mapping =>
+
+            var fordwardedHeaderOptions = new ForwardedHeadersOptions
             {
-                mapping.UseForwardedHeaders(new ForwardedHeadersOptions
-                {
-                    ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
-                });
+                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+            };
+            fordwardedHeaderOptions.KnownNetworks.Clear();
+            fordwardedHeaderOptions.KnownProxies.Clear();
 
+            app.UseForwardedHeaders(fordwardedHeaderOptions);
+            app.UseRouting();
 
-
-                mapping.Use(async (context, next) =>
-                {
-
-                    context.Request.Scheme = "https";
-                    await next.Invoke();
-                });
-                mapping.UseRouting();
-
-                mapping.UseAuthentication();
-                mapping.UseAuthorization();
-                mapping.UseEndpoints(endpoints =>
+            app.UseAuthentication();
+            app.UseAuthorization();
+            app.UseEndpoints(endpoints =>
                 {
                     endpoints.MapControllers();
                 });
-            }
-            );
         }
     }
 }

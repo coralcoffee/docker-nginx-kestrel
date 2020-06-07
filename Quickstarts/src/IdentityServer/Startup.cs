@@ -55,6 +55,14 @@ namespace IdentityServer
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            var fordwardedHeaderOptions = new ForwardedHeadersOptions
+            {
+                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+            };
+            fordwardedHeaderOptions.KnownNetworks.Clear();
+            fordwardedHeaderOptions.KnownProxies.Clear();
+
+            app.UseForwardedHeaders(fordwardedHeaderOptions);
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -64,14 +72,6 @@ namespace IdentityServer
             app.UseRouting();
 
                 
-            var fordwardedHeaderOptions = new ForwardedHeadersOptions
-            {
-                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
-            };
-            fordwardedHeaderOptions.KnownNetworks.Clear();
-            fordwardedHeaderOptions.KnownProxies.Clear();
-
-            app.UseForwardedHeaders(fordwardedHeaderOptions);
 
             app.UseIdentityServer();
             app.UseAuthorization();
