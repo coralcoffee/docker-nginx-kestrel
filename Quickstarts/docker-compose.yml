@@ -1,0 +1,14 @@
+idp:
+  build: ./scr/IdentityServer
+  container_name: idp
+  ports: 
+    - "6000:80"
+
+mvc:
+  build: ./scr/MvcClient
+  container_name: mvc-client
+  ports:
+    - "80:80"
+    - "443:443"
+  links:
+    - idp

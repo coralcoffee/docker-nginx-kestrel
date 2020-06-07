@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "NHpWoEFooOYAyO3oXUzWMQVNiQ6fr/G5ZPiHpB19DA4GtVynmyw4g306PFgd2kVMEthI6B6OYnVtI0VNd7AyZw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\garyyh9y7\\Source\\Repos\\ref\\docker-nginx-kestrel\\Quickstarts\\src\\Client\\Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\garyyh9y7\\.nuget\\packages\\identitymodel\\4.0.0\\identitymodel.4.0.0.nupkg.sha512",
+    "C:\\Users\\garyyh9y7\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\garyyh9y7\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512",
+    "C:\\Users\\garyyh9y7\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\garyyh9y7\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\garyyh9y7\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\garyyh9y7\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

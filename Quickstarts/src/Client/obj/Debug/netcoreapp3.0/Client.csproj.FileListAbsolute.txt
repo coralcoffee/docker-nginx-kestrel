@@ -1,0 +1,16 @@
+C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\3_AspNetCoreAndApis\src\Client\bin\Debug\netcoreapp3.0\Client.exe
+C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\3_AspNetCoreAndApis\src\Client\bin\Debug\netcoreapp3.0\Client.deps.json
+C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\3_AspNetCoreAndApis\src\Client\bin\Debug\netcoreapp3.0\Client.runtimeconfig.json
+C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\3_AspNetCoreAndApis\src\Client\bin\Debug\netcoreapp3.0\Client.runtimeconfig.dev.json
+C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\3_AspNetCoreAndApis\src\Client\bin\Debug\netcoreapp3.0\Client.dll
+C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\3_AspNetCoreAndApis\src\Client\bin\Debug\netcoreapp3.0\Client.pdb
+C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\3_AspNetCoreAndApis\src\Client\bin\Debug\netcoreapp3.0\IdentityModel.dll
+C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\3_AspNetCoreAndApis\src\Client\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\3_AspNetCoreAndApis\src\Client\obj\Debug\netcoreapp3.0\Client.csprojAssemblyReference.cache
+C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\3_AspNetCoreAndApis\src\Client\obj\Debug\netcoreapp3.0\Client.AssemblyInfoInputs.cache
+C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\3_AspNetCoreAndApis\src\Client\obj\Debug\netcoreapp3.0\Client.AssemblyInfo.cs
+C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\3_AspNetCoreAndApis\src\Client\obj\Debug\netcoreapp3.0\Client.csproj.CoreCompileInputs.cache
+C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\3_AspNetCoreAndApis\src\Client\obj\Debug\netcoreapp3.0\Client.csproj.CopyComplete
+C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\3_AspNetCoreAndApis\src\Client\obj\Debug\netcoreapp3.0\Client.dll
+C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\3_AspNetCoreAndApis\src\Client\obj\Debug\netcoreapp3.0\Client.pdb
+C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\3_AspNetCoreAndApis\src\Client\obj\Debug\netcoreapp3.0\Client.genruntimeconfig.cache
