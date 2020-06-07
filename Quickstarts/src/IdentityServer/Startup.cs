@@ -62,23 +62,26 @@ namespace IdentityServer
             fordwardedHeaderOptions.KnownNetworks.Clear();
             fordwardedHeaderOptions.KnownProxies.Clear();
 
-            app.UseForwardedHeaders(fordwardedHeaderOptions);
-            if (env.IsDevelopment())
+            app.Map("/ident", builder =>
             {
-                app.UseDeveloperExceptionPage();
-            }
+                builder.UseForwardedHeaders(fordwardedHeaderOptions);
+                if (env.IsDevelopment())
+                {
+                    builder.UseDeveloperExceptionPage();
+                }
 
-            app.UseStaticFiles();
-            app.UseRouting();
+                builder.UseStaticFiles();
+                builder.UseRouting();
 
-                
 
-            app.UseIdentityServer();
-            app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
+                builder.UseIdentityServer();
+                builder.UseAuthorization();
+
+                builder.UseEndpoints(endpoints =>
             {
                 endpoints.MapDefaultControllerRoute();
+            });
             });
         }
     }

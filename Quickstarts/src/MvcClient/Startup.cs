@@ -46,29 +46,31 @@ namespace MvcClient
             };
             fordwardedHeaderOptions.KnownNetworks.Clear();
             fordwardedHeaderOptions.KnownProxies.Clear();
-
-            app.UseForwardedHeaders(fordwardedHeaderOptions);
-            if (env.IsDevelopment())
+            app.Map("/sample", builder =>
             {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-            }
+                builder.UseForwardedHeaders(fordwardedHeaderOptions);
+                if (env.IsDevelopment())
+                {
+                    builder.UseDeveloperExceptionPage();
+                }
+                else
+                {
+                    builder.UseExceptionHandler("/Home/Error");
+                }
 
-            app.UseStaticFiles();
+                builder.UseStaticFiles();
 
-           
-            app.UseAuthentication(); 
-            app.UseRouting(); 
-            app.UseAuthorization();
-           
 
-            app.UseEndpoints(endpoints =>
+                builder.UseAuthentication();
+                builder.UseRouting();
+                builder.UseAuthorization();
+
+
+                builder.UseEndpoints(endpoints =>
             {
                 endpoints.MapDefaultControllerRoute()
                     .RequireAuthorization();
+            });
             });
         }
     }
