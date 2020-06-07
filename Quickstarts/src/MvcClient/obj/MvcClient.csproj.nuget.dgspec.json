@@ -43,7 +43,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[3.0.0, )"
             }
           },
           "imports": [
