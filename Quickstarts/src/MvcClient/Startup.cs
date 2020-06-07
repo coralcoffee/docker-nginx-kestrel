@@ -47,6 +47,7 @@ namespace MvcClient
             fordwardedHeaderOptions.KnownProxies.Clear();
 
             app.UseForwardedHeaders(fordwardedHeaderOptions);
+            app.UsePathBase("/sample");
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
