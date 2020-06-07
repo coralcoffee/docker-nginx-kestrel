@@ -1,19 +1,19 @@
 idp:
   build: ./src/IdentityServer
-  container_name: idp
+  container_name: sample.idp
   ports: 
     - "8000:80"
 
 api: 
   build: ./src/Api
-  container_name: api
+  container_name: sample.api
   ports: 
     - "8002:80"
   restart: on-failure
 
 mvc:
   build: ./src/MvcClient
-  container_name: mvc-client
+  container_name: sample.client
   ports:
     - "8001:80"
 
