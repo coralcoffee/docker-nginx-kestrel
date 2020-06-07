@@ -63,7 +63,6 @@ namespace IdentityServer
             app.UseStaticFiles();
             app.UseRouting();
 
-            app.UseIdentityServer();
                 
             var fordwardedHeaderOptions = new ForwardedHeadersOptions
             {
@@ -74,6 +73,7 @@ namespace IdentityServer
 
             app.UseForwardedHeaders(fordwardedHeaderOptions);
 
+            app.UseIdentityServer();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
