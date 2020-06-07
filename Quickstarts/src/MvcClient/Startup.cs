@@ -24,7 +24,7 @@ namespace MvcClient
                 .AddOpenIdConnect("oidc", options =>
                 {
                     options.Authority = "https://ubuntu-dev.southcentralus.cloudapp.azure.com/";
-                    options.RequireHttpsMetadata = false;
+                    options.RequireHttpsMetadata = true;
 
                     options.ClientId = "mvc";
                     options.ClientSecret = "secret";
