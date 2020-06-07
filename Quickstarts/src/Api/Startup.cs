@@ -25,22 +25,31 @@ namespace Api
 
         public void Configure(IApplicationBuilder app)
         {
-            var fordwardedHeaderOptions = new ForwardedHeadersOptions
+            app.Map("/api", mapping =>
             {
-                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
-            };
-            fordwardedHeaderOptions.KnownNetworks.Clear();
-            fordwardedHeaderOptions.KnownProxies.Clear();
+                mapping.UseForwardedHeaders(new ForwardedHeadersOptions
+                {
+                    ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+                });
 
-            app.UseForwardedHeaders(fordwardedHeaderOptions);
-            app.UseRouting();
 
-            app.UseAuthentication();
-            app.UseAuthorization();
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+
+                mapping.Use(async (context, next) =>
+                {
+
+                    context.Request.Scheme = "https";
+                    await next.Invoke();
+                });
+                mapping.UseRouting();
+
+                mapping.UseAuthentication();
+                mapping.UseAuthorization();
+                mapping.UseEndpoints(endpoints =>
+                {
+                    endpoints.MapControllers();
+                });
+            }
+            );
         }
     }
 }
