@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "S98sBsHzbxNGuNXpjwOV7JM9iU6sq0xbd8kcKNkNyuo5/PrvI5e/vbiBSobk1kCd0WxYsDXnSjVBv2EYQ1ZG3Q==",
+  "dgSpecHash": "nlNt6nQStgidur2VOqwHyc4v8WEXURETegAU+Cig7dxKHYYqfyOE8WKyUowBOtzEmag/acnuWYn9kyK0m7/XXw==",
   "success": true,
   "projectFilePath": "C:\\Users\\garyyh9y7\\Source\\Repos\\ref\\docker-nginx-kestrel\\Quickstarts\\src\\MvcClient\\MvcClient.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\garyyh9y7\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.0.0\\microsoft.aspnetcore.authentication.jwtbearer.3.0.0.nupkg.sha512",
     "C:\\Users\\garyyh9y7\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\3.0.0\\microsoft.aspnetcore.authentication.openidconnect.3.0.0.nupkg.sha512",
     "C:\\Users\\garyyh9y7\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
     "C:\\Users\\garyyh9y7\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\5.5.0\\microsoft.identitymodel.jsonwebtokens.5.5.0.nupkg.sha512",

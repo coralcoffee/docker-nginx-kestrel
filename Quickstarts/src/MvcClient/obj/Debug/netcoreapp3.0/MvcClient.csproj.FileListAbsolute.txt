@@ -46,8 +46,6 @@ C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\3_AspNetCor
 C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\3_AspNetCoreAndApis\src\MvcClient\obj\Debug\netcoreapp3.0\MvcClient.genruntimeconfig.cache
 C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\src\MvcClient\obj\Debug\netcoreapp3.0\MvcClient.AssemblyInfoInputs.cache
 C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\src\MvcClient\obj\Debug\netcoreapp3.0\MvcClient.AssemblyInfo.cs
-C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\src\MvcClient\obj\Debug\netcoreapp3.0\MvcClient.csproj.CoreCompileInputs.cache
-C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\src\MvcClient\obj\Debug\netcoreapp3.0\MvcClient.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\src\MvcClient\obj\Debug\netcoreapp3.0\MvcClient.RazorAssemblyInfo.cache
 C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\src\MvcClient\obj\Debug\netcoreapp3.0\MvcClient.RazorAssemblyInfo.cs
 C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\src\MvcClient\obj\Debug\netcoreapp3.0\MvcClient.dll
@@ -89,3 +87,6 @@ C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\src\MvcClie
 C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\src\MvcClient\obj\Debug\netcoreapp3.0\staticwebassets\MvcClient.StaticWebAssets.Manifest.cache
 C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\src\MvcClient\obj\Debug\netcoreapp3.0\staticwebassets\MvcClient.StaticWebAssets.xml
 C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\src\MvcClient\obj\Debug\netcoreapp3.0\MvcClient.genruntimeconfig.cache
+C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\src\MvcClient\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\src\MvcClient\obj\Debug\netcoreapp3.0\MvcClient.csproj.CoreCompileInputs.cache
+C:\Users\garyyh9y7\Source\Repos\ref\docker-nginx-kestrel\Quickstarts\src\MvcClient\obj\Debug\netcoreapp3.0\MvcClient.MvcApplicationPartsAssemblyInfo.cache

@@ -26,7 +26,7 @@
         "dependencies": {
           "IdentityServer4": "3.0.1",
           "Microsoft.AspNetCore.Authentication.Google": "3.0.0",
-          "Serilog.AspNetCore": "3.0.0",
+          "Serilog.AspNetCore": "3.1.0",
           "Serilog.Sinks.Console": "3.1.1",
           "Microsoft.AspNetCore.Antiforgery": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.0.0.0",
@@ -624,7 +624,7 @@
           "lib/netstandard2.0/Serilog.dll": {}
         }
       },
-      "Serilog.AspNetCore/3.0.0": {
+      "Serilog.AspNetCore/3.1.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.0.0",
           "Microsoft.Extensions.DependencyInjection": "2.0.0",
@@ -640,7 +640,7 @@
         "runtime": {
           "lib/netstandard2.0/Serilog.AspNetCore.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "3.0.0.0"
+            "fileVersion": "3.1.0.0"
           }
         },
         "compile": {
@@ -2982,12 +2982,12 @@
       "path": "serilog/2.8.0",
       "hashPath": "serilog.2.8.0.nupkg.sha512"
     },
-    "Serilog.AspNetCore/3.0.0": {
+    "Serilog.AspNetCore/3.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-xwgUAk1cvQWp9rkAu7kSlUeDjbliAa7UtmsZpZv/HQbFlOHkmiiytw715sQ0PcNM6JMcGAP7GCOkfQ+GbeOQ7A==",
-      "path": "serilog.aspnetcore/3.0.0",
-      "hashPath": "serilog.aspnetcore.3.0.0.nupkg.sha512"
+      "sha512": "sha512-wnQhyRTLGxuViTn7cvhuxEeeS7+O9LWUa5MIV2xUVy1r4aOaQ19Z0yWRQVexl7B+WlgjjOoTfG4CuOcjlXu+7A==",
+      "path": "serilog.aspnetcore/3.1.0",
+      "hashPath": "serilog.aspnetcore.3.1.0.nupkg.sha512"
     },
     "Serilog.Extensions.Hosting/3.0.0": {
       "type": "package",
