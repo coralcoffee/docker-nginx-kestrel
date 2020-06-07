@@ -9,6 +9,6 @@ mvc:
   container_name: mvc-client
   ports:
     - "8001:80"
-    - "8002:443"
+
   links:
     - idp

@@ -48,10 +48,10 @@ namespace IdentityServer
                     RequirePkce = true,
                 
                     // where to redirect to after login
-                    RedirectUris = { "http://ubuntu-dev.southcentralus.cloudapp.azure.com/signin-oidc" },
+                    RedirectUris = { "https://ubuntu-dev.southcentralus.cloudapp.azure.com/signin-oidc" },
 
                     // where to redirect to after logout
-                    PostLogoutRedirectUris = { "http://ubuntu-dev.southcentralus.cloudapp.azure.com/signout-callback-oidc" },
+                    PostLogoutRedirectUris = { "https://ubuntu-dev.southcentralus.cloudapp.azure.com/signout-callback-oidc" },
 
                     AllowedScopes = new List<string>
                     {
