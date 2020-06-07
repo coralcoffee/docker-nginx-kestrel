@@ -12,3 +12,5 @@ mvc:
 
   links:
     - idp
+  
+  restart: on-failure
