@@ -25,9 +25,6 @@ namespace Api
 
         public void Configure(IApplicationBuilder app)
         {
-            app.UseRouting();
-
-            app.UseAuthentication();
             var fordwardedHeaderOptions = new ForwardedHeadersOptions
             {
                 ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
@@ -36,6 +33,9 @@ namespace Api
             fordwardedHeaderOptions.KnownProxies.Clear();
 
             app.UseForwardedHeaders(fordwardedHeaderOptions);
+            app.UseRouting();
+
+            app.UseAuthentication();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
