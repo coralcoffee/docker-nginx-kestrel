@@ -16,7 +16,7 @@ namespace Api
             services.AddAuthentication("Bearer")
                 .AddJwtBearer("Bearer", options =>
                 {
-                    options.Authority = "http://ubuntu-dev.southcentralus.cloudapp.azure.com/";
+                    options.Authority = "https://ubuntu-dev.southcentralus.cloudapp.azure.com/";
                     //options.RequireHttpsMetadata = false;
 
                     options.Audience = "api1";
