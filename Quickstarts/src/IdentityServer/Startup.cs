@@ -64,7 +64,7 @@ namespace IdentityServer
             app.UseRouting();
 
             app.UseIdentityServer();
-
+                
             var fordwardedHeaderOptions = new ForwardedHeadersOptions
             {
                 ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto

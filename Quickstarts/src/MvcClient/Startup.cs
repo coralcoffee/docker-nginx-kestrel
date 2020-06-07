@@ -22,7 +22,7 @@ namespace MvcClient
                 .AddCookie("Cookies")
                 .AddOpenIdConnect("oidc", options =>
                 {
-                    options.Authority = "http://ubuntu-dev.southcentralus.cloudapp.azure.com/";
+                    options.Authority = "http://sample.smhis2.canadacentral.cloudapp.azure.com/";
                     options.RequireHttpsMetadata = false;
 
                     options.ClientId = "mvc";
